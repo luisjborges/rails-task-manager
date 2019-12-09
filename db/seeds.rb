@@ -1,7 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+<%= form_for(@task) do |f| %>
+  <%= f.label :title, "Enter a title" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details, "Enter a description" %>
+  <%= f.text_field :details %>
+
+  <%= f.submit %>
+<% end %>
